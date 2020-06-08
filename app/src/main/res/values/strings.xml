@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MusicList</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="search_for_songs">Search for songs</string>
+    <string name="search_error">"Error fetching search results"</string>
+    <string name="song_by">Song by %s</string>
+    <string name="search_for_any">Start searching for any songs, artists or albums to play</string>
+</resources>

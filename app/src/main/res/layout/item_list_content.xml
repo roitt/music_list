@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_1x"
+                android:layout_marginBottom="@dimen/margin_1x">
+
+    <ImageView
+            android:layout_width="@dimen/thumbnail_size"
+            android:layout_height="@dimen/thumbnail_size"
+            tools:srcCompat="@tools:sample/avatars[1]"
+            android:id="@+id/thumbnail"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/thumbnail"
+            android:layout_marginStart="@dimen/margin_1x">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/title"
+                  android:textStyle="bold"
+                  android:textColor="@color/colorBlack"
+                  android:textSize="@dimen/text_2x"
+                  android:layout_marginStart="@dimen/margin_1x"
+                  android:maxLines="1"
+                  android:ellipsize="end"
+                  tools:text="Jeene Laga Hoon"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/subtitle"
+                  android:textSize="@dimen/text_1x"
+                  android:textColor="@color/colorGrey"
+                  android:layout_marginStart="@dimen/margin_1x"
+                  android:maxLines="1"
+                  android:ellipsize="end"
+                  tools:text="Song by Atif Aslam and Shreya Ghoshal"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tertiary_title"
+                  android:textSize="@dimen/text_1x"
+                  android:textColor="@color/colorGrey"
+                  android:layout_marginStart="@dimen/margin_1x"
+                  android:maxLines="1"
+                  android:ellipsize="end"
+                  tools:text="Kyon Hua?"/>
+    </LinearLayout>
+</RelativeLayout>
